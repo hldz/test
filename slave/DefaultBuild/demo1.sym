@@ -1,0 +1,201 @@
+#05
+;FF     PUBLIC
+02FFED8@@CPR1
+02FFEDE@@FPRF1
+02FFEDF@@FPRF2
+02FFEDE@@FPRFP
+02FFED8@@FPRS
+02FFEDC@@FPRXD
+02FFEDC@@FPRXP
+02FFEDD@@FPRXS
+01001A4@@lsband
+01001B8@@lsbxor
+01001A4@@luband
+01001B8@@lubxor
+0100185@@lursh
+02FF882_?DATA
+02FF89C_?DATAL
+02FF89C_?DATS
+02FF89C_?INIS
+02FF89C_?INIT
+02FF89C_?INITL
+0100002_?RLINIT
+0100002_?R_INIS
+0100064_?R_INIT
+02FF798_@BRKADR
+02FF786_@DIVR
+02FF780_@FNCENT
+02FF700_@FNCTBL
+02FF78A_@LDIVR
+0000000_@MAA
+02FF7BA_@MEMBTM
+02FF79A_@MEMTOP
+02FFED8_@RTARG0
+02FFED9_@RTARG1
+02FFEDA_@RTARG2
+02FFEDB_@RTARG3
+02FFEDC_@RTARG4
+02FFEDD_@RTARG5
+02FFEDE_@RTARG6
+02FFEDF_@RTARG7
+01FFE20_@SADBEG
+00000C0_@SADSIZ
+02FF782_@SEED
+02FFED4_@SEGAX
+02FFED5_@SEGBC
+02FFED6_@SEGDE
+02FFED7_@SEGHL
+00FFED4_@STBEG
+00FF89C_@STEND
+02FF792_@TOKPTR
+0100185_@cend
+01000D8_@cstart
+0100014_@vect14
+0100016_@vect16
+010001E_@vect1e
+0100020_@vect20
+010002C_@vect2c
+010002E_@vect2e
+0100030_@vect30
+0100032_@vect32
+0100034_@vect34
+0100042_@vect42
+0100044_@vect44
+0100046_@vect46
+0100048_@vect48
+02FF86A_CRC
+01007CC_Delay
+0100EA8_R_ADC_Create
+0100F1B_R_ADC_Get_Result
+0100F17_R_ADC_Set_OperationOff
+0100F13_R_ADC_Set_OperationOn
+0100EFF_R_ADC_Start
+0100F09_R_ADC_Stop
+0100898_R_CGC_Create
+01008A8_R_CGC_Get_ResetSource
+0100869_R_MAIN_UserInit
+01008AD_R_PORT_Create
+0100C21_R_SAU0_Create
+0100D59_R_SAU1_Create
+010086D_R_Systeminit
+0100AD1_R_TAU0_Channel0_Start
+0100AFE_R_TAU0_Channel0_Stop
+0100B2B_R_TAU0_Channel4_Start
+0100B3C_R_TAU0_Channel4_Stop
+0100B4D_R_TAU0_Channel5_Start
+0100B5E_R_TAU0_Channel5_Stop
+0100B6F_R_TAU0_Channel6_Start
+0100B80_R_TAU0_Channel6_Stop
+0100B91_R_TAU0_Channel7_Start
+0100BA2_R_TAU0_Channel7_Stop
+01008C6_R_TAU0_Create
+0100C33_R_UART0_Create
+0100CFF_R_UART0_Receive
+0100D25_R_UART0_Send
+0100CB3_R_UART0_Start
+0100CDE_R_UART0_Stop
+0100D6B_R_UART2_Create
+0100E37_R_UART2_Receive
+0100E5D_R_UART2_Send
+0100DEB_R_UART2_Start
+0100E16_R_UART2_Stop
+01004DA_UartRead
+0100608_UartRead2
+0100BB3_UartRxMonitor
+0100BEA_UartRxMonitor2
+01004A7_UartWrite
+02FF88B_able_485
+02FF86C_borrow_flag
+02FF88E_borrow_ok_count
+02FF84C_buf
+02FF7C7_bufRxd
+02FF807_bufRxd2
+02FF7BC_cell_status
+02FF882_cmdArrived
+02FF884_cmdArrived2
+02FF883_cntRxd
+02FF885_cntRxd2
+01003B9_crc16
+0100486_delay
+02FF796_errno
+0100F68_exit
+02FF7C6_flag_10ms
+02FF874_g_uart0_rx_count
+02FF876_g_uart0_rx_length
+02FF870_g_uart0_tx_count
+02FF87E_g_uart2_rx_count
+02FF880_g_uart2_rx_length
+02FF87A_g_uart2_tx_count
+02FF872_gp_uart0_rx_address
+02FF86E_gp_uart0_tx_address
+02FF87C_gp_uart2_rx_address
+02FF878_gp_uart2_tx_address
+0100890_hdwinit
+0102000_local_address
+0100697_lock
+02FF896_locking
+02FF894_locking_count
+01007EF_main
+02FF7F7_rbuf
+02FF83C_rbuf2
+0100515_read_battery
+0100701_read_master
+02FF88A_send_succ_flag
+0100F24_stkinit
+02FF886_t_battery_command
+02FF7EF_tbuf
+02FF82F_tbuf2
+02FF7BA_timebase
+0100643_unlock
+02FF88C_unlock_succ
+02FF890_unlocking
+02FF892_unlocking_count
+;FF     @cstart
+;FF     r_main
+<02FF86D_count
+;FF     r_systeminit
+;FF     r_cg_cgc
+;FF     r_cg_cgc_user
+;FF     r_cg_port
+;FF     r_cg_port_user
+;FF     r_cg_timer
+;FF     r_cg_timer_user
+<02FF89A_cntbkp
+02FF898_cntbkp
+02FF89B_idletmr
+02FF899_idletmr
+01001CC_r_tau0_channel0_interrupt
+01001CE_r_tau0_channel1_interrupt
+01001D0_r_tau0_channel2_interrupt
+01001D2_r_tau0_channel3_interrupt
+01001D4_r_tau0_channel4_interrupt
+01001D6_r_tau0_channel5_interrupt
+01001D8_r_tau0_channel6_interrupt
+01001DD_r_tau0_channel7_interrupt
+;FF     r_cg_serial
+;FF     r_cg_serial_user
+<0100E97_r_uart0_callback_error
+0100E91_r_uart0_callback_receiveend
+0100E96_r_uart0_callback_sendend
+0100E92_r_uart0_callback_softwareoverrun
+0100213_r_uart0_interrupt_receive
+01002A1_r_uart0_interrupt_send
+0100EA4_r_uart2_callback_error
+0100E9B_r_uart2_callback_receiveend
+0100EA0_r_uart2_callback_sendend
+0100E9C_r_uart2_callback_softwareoverrun
+01002E5_r_uart2_interrupt_receive
+0100373_r_uart2_interrupt_send
+;FF     r_cg_adc
+;FF     r_cg_adc_user
+<01003B7_r_adc_interrupt
+;FF     @lursh
+;FF     @lband
+;FF     @lbxor
+;FF     @SEGREG
+;FF     @stkinit
+;FF     @RTARG0
+;FF     exit
+;FF     @rom
+=
+
